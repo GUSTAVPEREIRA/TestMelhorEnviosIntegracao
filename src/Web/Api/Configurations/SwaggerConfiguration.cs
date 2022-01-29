@@ -30,7 +30,8 @@ public static class SwaggerConfiguration
             xmlPath = Path.Combine(AppContext.BaseDirectory, "Core.xml");
             c.IncludeXmlComments(xmlPath);
         });
-
+        
         services.AddFluentValidationRulesToSwagger();
+        services.AddSwaggerGenNewtonsoftSupport();
     }
 }

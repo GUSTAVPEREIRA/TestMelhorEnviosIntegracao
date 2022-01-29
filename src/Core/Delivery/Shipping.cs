@@ -4,9 +4,12 @@ namespace Core.Delivery;
 
 public class Shipping
 {
-    [JsonProperty("from")] public ShippingPostalCode ShippingPostalFrom { get; set; }
+    [JsonProperty("from")]
+    public ShippingPostalCode ShippingPostalFrom { get; set; }
 
-    [JsonProperty("to")] public ShippingPostalCode ShippingPostalTo { get; set; }
+    [JsonProperty("to")] 
+    public ShippingPostalCode ShippingPostalTo { get; set; }
 
-    [JsonProperty("products")] public List<ShippingProduct> Products { get; set; }
+    [JsonProperty("products")]
+    public List<ShippingProduct> Products { get; set; }
 }
